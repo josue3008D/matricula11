@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <h1>Formulario de Inscripción</h1>
+        <img src="escudo.png" alt="Escudo del Colegio" class="school-logo">
+    </header>
+
+    <main>
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Datos del Niño(a)</legend>
+                <label for="nombre">Nombres y Apellidos</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+                <label for="historia-clinica">Historia Clínica</label>
+                <textarea id="historia-clinica" name="historia-clinica" required></textarea>
+
+                <label for="tipo-sangre">Tipo de Sangre</label>
+                <input type="text" id="tipo-sangre" name="tipo-sangre" required>
+
+                <label for="enfermedad">Alguna Enfermedad</label>
+                <input type="text" id="enfermedad" name="enfermedad">
+
+                <label for="alergia">Sufre de Alguna Alergia</label>
+                <input type="text" id="alergia" name="alergia">
+
+                <label for="fobia">Tiene Alguna Fobia</label>
+                <input type="text" id="fobia" name="fobia">
+
+                <label for="problemas-nacer">Problemas al Nacer</label>
+                <input type="text" id="problemas-nacer" name="problemas-nacer">
+
+                <label for="ie">Viene de otra IE, Cuna o Puerta</label>
+                <input type="text" id="ie" name="ie">
+
+                <label for="nombre-ie">Nombre de la IE</label>
+                <input type="text" id="nombre-ie" name="nombre-ie">
+
+                <label for="codigo-ie">Código IE</label>
+                <input type="text" id="codigo-ie" name="codigo-ie">
+
+                <label for="nombre-mama">Nombre de la Mamá</label>
+                <input type="text" id="nombre-mama" name="nombre-mama">
+
+                <label for="dni-mama">DNI Mamá</label>
+                <input type="text" id="dni-mama" name="dni-mama">
+
+                <label for="celular-mama">Número de Celular Mamá</label>
+                <input type="text" id="celular-mama" name="celular-mama">
+
+                <label for="vive-juntos">Viven Juntos</label>
+                <input type="text" id="vive-juntos" name="vive-juntos">
+
+                <label for="autorizado-recoger">¿La otra parte puede recoger al niño?</label>
+                <input type="text" id="autorizado-recoger" name="autorizado-recoger">
+
+                <label for="celular-casa">Número de Celular de Casa o de Referencia</label>
+                <input type="text" id="celular-casa" name="celular-casa">
+
+                <label for="email-mama">Correo Electrónico de Mamá</label>
+                <input type="email" id="email-mama" name="email-mama">
+
+                <label for="nombre-papa">Nombre del Papá</label>
+                <input type="text" id="nombre-papa" name="nombre-papa">
+
+                <label for="dni-papa">DNI Papá</label>
+                <input type="text" id="dni-papa" name="dni-papa">
+
+                <label for="celular-papa">Número de Celular Papá</label>
+                <input type="text" id="celular-papa" name="celular-papa">
+
+                <label for="email-papa">Correo Electrónico de Papá</label>
+                <input type="email" id="email-papa" name="email-papa">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="ocupacion-mama">Ocupación de Mamá</label>
+                <input type="text" id="ocupacion-mama" name="ocupacion-mama">
+
+                <label for="ocupacion-papa">Ocupación de Papá</label>
+                <input type="text" id="ocupacion-papa" name="ocupacion-papa">
+
+                <label for="religion">Religión</label>
+                <input type="text" id="religion" name="religion">
+
+                <label for="autorizado-recoger">¿Quién está autorizado a recoger al niño?</label>
+                <input type="text" id="autorizado-recoger" name="autorizado-recoger">
+
+                <label for="movilidad">¿Tiene movilidad el niño?</label>
+                <input type="text" id="movilidad" name="movilidad">
+
+                <button type="button" id="saveButton">Guardar Datos</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <div id="confirmationMessage">Datos guardados correctamente.</div>
+
+    <div id="fichaContainer" style="display: none;">
+        <h2>Ficha del Niño(a)</h2>
+        <p id="fichaContent"></p>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
